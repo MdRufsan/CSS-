@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive column.</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .col{
+            float: left;/*flex nile row class nia kj kora lagto.*/
+            width: 25%;
+            padding: 10px;
+            color: lightcoral;
+
+        }
+        @media screen and (max-width: 992px) {
+            .col{
+                float:left;
+                width: 50%;
+            
+            }
+            @media screen and (max-width: 600px) {
+            .col{
+                
+                width: 100%;
+        }
+    </style>
+</head>
+<body><div class="row">
+    <div class="col">
+        <h1>HTML</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam illo modi ea adipisci, unde dolor.</p>
+
+    </div>
+    <div class="col">
+        <h1>CSS</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam illo modi ea adipisci, unde dolor.</p>
+        
+    </div>
+    <div class="col">
+        <h1>JS</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam illo modi ea adipisci, unde dolor.</p>
+        
+    </div>
+    <div class="col">
+        <h1>Python</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam illo modi ea adipisci, unde dolor.</p>
+        
+    </div>
+</div>
+    
+</body>
+</html>

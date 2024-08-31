@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z index & css3 variable</title>
+    <style>
+        :root{
+            --primary-color:rgb(16, 16, 248);/*root er moddhe variable diclear kora hoy.--variable-name:value;*/
+            --secoundary-color:rgb(77, 236, 77);
+            --tertially-color:AQUA;
+        }
+        div{
+            height: 250px;
+            width: 250px;
+            border: 10px solid rgb(2, 2, 24);
+            border-radius: 50px;
+        }
+        #div1{
+            background: #ff0000;/*sob browser e support korar jonno dewa lage*/
+            background-color: var(--primary-color,#ff0000);/*variable diclear kora hoise. var(variable-name,fallback-value).Kono karone variable e peoblem hole fallback value kaj korbe*/
+            
+            position: absolute;
+            z-index: 1; /*z-index er maddhome position control kora hoy.Er value negative/positive hote pare.z-index er jar value besi seta upore bosbe.eta only positioning er jonnoi use hoy*/
+        }
+        #div2{
+            background: #0000ff;
+            background-color:var(--secoundary-color,#0000ff);
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            z-index: 2;
+        }
+        #div3{
+            background: rgb(212, 21, 21);
+            background-color:var(--tertialy-color,rgb(212, 21, 21));/*tertially banan vol hoise tai fallback value kaj korbe*/
+            position: absolute;
+            left: 300px;
+            top: 300px;
+            z-index: 3;
+        }
+        @media screen and (max-width:600px) {/*screen size 600px er kom korle eta response korbe.600 up korle asol color hoye jbe*/
+            :root{
+                --primary-color:black;
+                --secoundary-color:rgb(209, 77, 236);
+                --tertially-color:rgb(198, 218, 23);/*ey var ta kaj korbe na cause declear er somoy banan vol hoisilo*/
+            }
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    
+  
+</body>
+</html>

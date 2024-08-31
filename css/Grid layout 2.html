@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout 2, Grid area</title>
+    <style>
+        /*grid-area dia div/section/item er name dwa jay -->*/
+        .item1{grid-area: header;}
+        .item2{grid-area: menu ;}
+        .item3{grid-area: main;}
+        .item4{grid-area: aside;}
+        .item5{grid-area: footer;}
+        .grid-container{
+            display: grid;
+            /*grid-template-columns: auto auto auto auto auto auto ;/*if col=n so total cols=n+1. if row=x so; total rows=x+1*/
+            grid-template-areas: 
+                   'header header header header header header'/* 1st row te header 6 col jayga nibe*/
+                   'menu main main main aside aside'/* 2& row te menu 1 col ,main 3 col , aside 2 col jayga nibe*/
+                   'menu footer footer footer footer footer'/* 3rd row te menu 1, footer 5 col jayga nibe*/      
+        }
+        .grid-container > div{
+            background-color: aquamarine;
+            border: 1px solid red;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        h1:hover{
+            box-shadow: 6px 0px 5px rgb(17, 30, 211);
+        }
+        /*
+        .item1{
+            grid-column: 1/7;
+        }
+        .item2{
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+        .item3{
+            grid-column: 2/6;
+        }
+        .item4{
+            grid-column: 6/7;
+        }
+        .item5{
+            grid-column: 2/7;
+        }*/
+       
+    </style>
+</head>
+<body>
+    <!--All section/item for website layout keeping in a container-->
+<div class="grid-container">
+    <div class="item1"><h1>Header</h1></div>
+    <div class="item2"><h1>Menu</h1></div>
+    <div class="item3"><h1>Main</h1></div>
+    <div class="item4"><h1>Aside</h1></div>
+    <div class="item5"><h1>Footer</h1></div>
+</div>
+</body>
+</html>

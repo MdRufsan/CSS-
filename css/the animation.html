@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        img{
+            max-width: 200px;
+            height: auto;
+            border: 5px solid rgb(254, 5, 5);
+
+            display: block;/*13&14 no line er jonno pic ta majhe asbe*/
+            margin: 0 auto;
+
+            margin-top: 100px;
+            border-radius: 50%;
+        
+        }
+        img:hover{
+            animation-name: img-anim; /*animation er ekta name dite hbe*/
+            animation-duration: 3s;
+            animation-fill-mode: forwards;/*last er obostha ta thakbe ager tay asbe na */
+        }
+        @keyframes img-anim{
+            /*from{
+                max-width: 300px;
+                border-color: blue;
+
+            }
+            to{
+                max-width: 800px;
+                border-color: rgb(20, 240, 9);
+               
+
+            }*/
+            /*from to use na kore nicher vabew kora jay*/
+
+             0%{
+                max-width: 300px;
+                border-color: blue;
+
+            }
+
+            50%{
+                border-color: aqua;
+
+
+            }
+            100%{
+                max-width: 800px;
+                border-color: rgb(20, 240, 9);
+               
+
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <img src="images/d.jpeg" alt="">
+</body>
+</html>

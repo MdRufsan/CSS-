@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            margin: 0 auto;
+            margin-top: 200px;
+            
+            /*transform: scale(1.2);orginal size thike 1.2 gon boro hbe*/
+
+            transition: 5s;
+        }
+
+        #div1:hover{
+            transform:scale(2);
+            background-color: rgb(86, 237, 11);
+            border-radius: 300px;
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(207, 19, 19);
+            margin: 0 auto;
+            margin-top: 200px;
+            border-radius: 30px;
+
+            transition: 5s;
+        }
+        #div2:hover{
+            transform: rotate(360deg);/*360 degree rotate hbe*/
+            background-color: blue;
+        }
+        #div3{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(43, 225, 10);
+            margin: 0 auto;
+            margin-top: 200px;
+            border-radius: 30px;
+
+            transition: 5s;}
+             
+        #div3:hover{
+            transform: translate(100px ,200px);/X axis thike 100 & Y axis thika 200px sorbe*/
+            background-color: blue;
+        }
+
+    </style>
+    
+    
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+</html>

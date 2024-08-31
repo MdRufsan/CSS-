@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav menu responsive.</title>
+    <style>
+        .menu{
+            background-color: darkgray;
+            display: flex;
+            justify-content: flex-end;
+            border-radius: 20px;
+            
+        }
+        .menu a{
+            text-decoration: none;
+            padding: 25px;
+            color: rgb(255, 255, 255);
+            
+            
+        }
+        
+        .menu a:hover{
+            background-color: red;
+            color:blue;
+        }
+        @media screen and (max-width: 600px){
+            .menu{
+                flex-direction:column;
+                padding:20px;
+                background-color:yellow ;
+               
+            }
+            .menu a {
+            background-color: indigo;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">View</a>
+        <a href="#">About Me</a>
+        <a href="#">Contract Me</a>
+    </div>
+</body>
+</html>

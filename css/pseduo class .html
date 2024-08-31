@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseduo class & peseduo element 1>   
+    </title>
+    <Style>
+        a:hover{
+            color: rgb(20, 174, 235);/*link e hover korle ey color hbe*/
+        }
+        /*hover,focus etc pseduo class
+        perseduo class diclear-->
+        element-name:pseduo class-name{}*/
+        a.my-link:hover{
+            color: rgb(2, 27, 27); /*my-link  class er link e hover korle ey color hbe */
+        }
+        input:focus{
+            background-color: rgb(244, 245, 235);/*hover er jonno pointer nile effect korto,focus er jonno click korar po reaction/effect korbe */
+            color: rgba(6, 241, 57, 0.89);
+        }
+        table,tr,th,td{
+            border: 1px solid red;
+        }
+        tr:nth-child(even){
+            /*nth-child ekta pseduo class jta table er tr er child golo style kora hoy*/
+            background-color: aqua;
+            color:blue;
+            font-style: italic;
+        }
+        tr:nth-child(odd){
+            background-color: yellow;
+        }
+        p::first-letter{
+            /*egolo pseduo element ja kiso onsho nia kaj kore*/
+            color: blue;
+            font-size: 50px;
+        }
+        p::after{
+            content:"######";
+            color: rgb(7, 247, 19);
+        }
+        ::selection{
+            color:red;
+            background: yellow;
+        }
+        
+        
+    </Style>
+</head>
+<body bgcolor="orange">
+    <a href="#">Tutorial</a>
+    <br><a href="#">Home</a><br>
+    <a class="my-link" href="# ">Active</a><br>
+    <div>
+        <label for="Full name" style="color: rgb(218, 9, 9);">Full name:</label>
+        <input type="text-feild" name="Full name" placeholder="Full name" id="Full name">
+    </div><br>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Shanto</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Shawon</td><td>20</td>
+        </tr>
+    </table>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tenetur minus aliquid minima pariatur. Dicta illum itaque illo labore eligendi?</p>
+    </body>
+    
+</html>

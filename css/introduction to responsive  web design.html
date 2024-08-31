@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to responsive web design.</title><!--Different size er divice e web site support korate use hoy.-->
+    <style>
+        *{
+            box-sizing: border-box;/*elements er hight ba width jte change na kore, border ba padding dile.*/
+
+        }
+
+        @media screen and (max-width: 700px) {
+            /*screen size 700px er kom hole.*/
+            body{
+                background-color: red;
+            }
+            h1{
+                color: aliceblue;
+            }
+            h2{
+                display: none;
+            
+        }
+        @media screen and (max-width: 600px){
+            /*screen size 600px er kom hole.*/
+            body{
+                background-color: aqua;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Responsive web design.</h1>
+    <h2>Bangladesh</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, rem!
+
+    </p>
+</body>
+</html>

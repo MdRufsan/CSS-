@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow & tooltip</title>
+    <style>
+        .tooltip{
+            position: relative;
+        }
+        
+       .tooltip-text {
+            visibility: hidden;
+            width: 150px;
+            background-color: rgb(10, 248, 42) ;
+            padding: 10px;
+            position: absolute;
+            top:10px;
+           
+
+        }
+       .tooltip:hover .tooltip-text {
+            visibility: visible;
+        }
+        div{
+            height: 200px;
+            width: 250px;
+            border: 1px solid #00ff00;
+            background-color:#ffb3ec;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" clas="tooltip">Facebook <span class="tooltip-text">Facebook is a social Media.</span></a>
+    <br>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias modi voluptas laudantium quibusdam et, dolorem similique quae inventore culpa tempora debitis quisquam officiis ex error qui harum voluptates sint laboriosam repudiandae, ullam, minus temporibus. Mollitia, fugit. Alias omnis quidem odio quaerat minima iure voluptas dolorem totam labore quam unde neque numquam ratione aperiam, in facilis ex mollitia minus suscipit velit maxime. Nostrum numquam provident fugit excepturi labore unde aperiam dignissimos qui beatae. Qui vero vel aliquid excepturi eum aut, cupiditate beatae perferendis recusandae eos adipisci, dolore optio! Fugit iusto doloribus, facere officia illum vitae possimus expedita modi nesciunt dolor mollitia est voluptatum! Aperiam, fugiat! Sed quae itaque repellendus voluptates commodi neque aspernatur officiis! Soluta quasi dolorum veniam saepe laborum numquam nihil nostrum consequuntur. Eligendi ducimus saepe quae recusandae quasi cum non alias nihil asperiores eius officia libero velit sunt vitae laboriosam corporis neque inventore quam tempora voluptas sint, nam numquam.
+    </div><br>
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form style.</title>
+    <style>
+        input[type=text]{
+            width:100%;
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin:20px 0px;
+            border:3px solid red;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: aqua;
+            
+           
+
+        }
+        #search{
+            background-image: url("images/search.png") ;
+            background-repeat: no-repeat;
+            background-size: 20px;
+            padding: 15px 40px;
+            background-position: 8px 17px;
+            width: 150px;
+            transition: width o.3s ease-in-out;/*width 0.3s er moddhe transition type-->ease-in-out*/
+            
+        }
+        #search:focus{
+            background-color: rgb(245, 7, 205);
+            width: 100%;
+            color: whitesmoke;
+        }
+
+        textarea{
+            resize: none;/*textarea er resize ta off korte*/
+            width: 50%;
+            padding: 20px;
+            border: 3px red solid ;
+            border-radius: 10px;
+            
+        }
+        textarea:focus{
+            background-color: rgb(10, 230, 65);
+        }
+        input[type="submit"],input[type="reset"]{
+            width: 100px;
+            border: none;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            
+        }
+        select{
+            width: 50%;
+            padding: 10px;
+            border: none;
+            background-color: tomato;
+            border-radius: 10px;
+
+        }
+        select:hover{
+            background-color: rgb(0, 255, 34);
+            box-shadow: 5px 5px 20px red;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        
+        <input type="text" name="search" id="search" placeholder="search"><br>
+
+        <lebel for ="fname">First name</lebel>
+        <input type="text" name="fname" id="fname">
+
+        <lebel for ="lname">Last name</lebel>
+        <input type="text" name="lname" id="lname">
+
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Write here..."></textarea><br>
+
+        <input type="submit" name="submit" id="submit">
+        <input type="reset" name="reset" id="reset">
+
+        <select name="sub-name" id="sub-name" >
+            <option value="C">C programming</option>
+             <option value="C++">C++</option>
+             <option value="Java">Java</option>
+             <option value="py">Python</option>
+
+        </select>
+
+        
+
+
+
+
+    </form>
+</body>
+</html>

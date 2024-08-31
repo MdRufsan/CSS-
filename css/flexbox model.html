@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox layout.</title>
+    <style>
+        .flex-container{
+            background-color: blanchedalmond;
+            display: flex;/*flex korle hoy x or y axis borabor kaj hobe*/
+            flex-wrap: wrap;/*screen soto boro kora hole jtotoko jyga lagbe tototoko e nibe.1st line e jayga na hole niche asbe.flex-wrap: nowrap; dile default, kono wrap hobe na.*/
+            flex-direction: row;/*row or column axis*/
+            /*flex-flow:wrap row;  eksathe 2 kaj*/
+            justify-content/*flex item goloke align korbe*/: center;/*left theke start hbe flex-start ;dile. flex-end; dile right theke */
+            height: 300px;
+            align-items: center;
+
+        }
+        .flex-container>div/*container er div golo nia kaj.er kaj age kore nibo*/{
+            font-size: 35px;
+            margin: 10px;
+            padding: 20px;
+            color: red;
+            
+            background-color: silver;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container"><!--flex-container ey container nibo .ete element nibo.first e ekey flexible kora lagbe-->
+        <div class="div1" style="flex-basis: 150px;">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+        <div class="div4">div4</div>
+        <div class="div5">div5</div>
+        <div class="div6">div6</div>
+        <div class="div7">div7</div>
+        <div class="div8">div8</div>
+    </div>
+    
+</body>
+</html>

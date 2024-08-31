@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ON/OFF button</title>
+    <style>
+        input{
+            appearance: none;
+            cursor:pointer ;
+            padding: 10px 20px;
+            background-color: rgb(14, 125, 223);
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        input::before{
+            content: 'ON';
+            color: rgb(245, 235, 235);
+        }
+        input:checked::before{
+            content: 'OFF';
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id=""><br>
+    <abbr  style="color: red;" title="Bangladesh">BD</abbr>
+    
+</body>
+</html>
