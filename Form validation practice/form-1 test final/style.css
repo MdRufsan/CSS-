@@ -1,0 +1,53 @@
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #2f03f3;
+    align: center;
+}
+body{
+    background-color: #1ae907;
+   
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea,select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"]{
+    padding: 10px 20px;
+    background-color: #1ae907;
+    color: #f00b0b;
+    
+    cursor:pointer;
+    border-radius: 10px;
+   
+}
+h1{
+    text-align: center;
+    color: antiquewhite;
+    
+}
+
+/* Media query for responsiveness */
+
+
+@media only screen and (max-width: 1000px) {
+    form {
+      background-color: rgb(27, 195, 252);
+      width: 90%;
+    }
+  }
+

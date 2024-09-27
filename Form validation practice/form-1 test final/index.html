@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form with Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="myForm" onsubmit="return validateForm()"> 
+          <h1>Form</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name here"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="male"><br>
+        <label for="male">Others</label><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone"><br><br>
+
+ 
+
+
+        <label for="district">District:
+        <select id="district" name="district" required>
+            <option value="Select District">Select District</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Borisal">Borisal</option>
+            <option value="Seylet">Seylet</option>
+            </select></label>
+
+
+
+        <label for="Image">Upload an image:</label>
+        <input type="file" id="fileInput"><br><br>
+
+        <label for="textarea">Textarea:</label>
+        <textarea id="textarea" name="textarea" cols="50" rows="5" ></textarea><br><br>
+        
+
+         <input type="submit" value="Submit" id="btn">
+        
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
