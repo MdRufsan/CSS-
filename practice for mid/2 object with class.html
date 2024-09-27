@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+
+    <script>
+
+     class Animal{
+        constructor(name,color,gender){
+            this.name=name;
+            this.color=color;
+            this.gender=gender;
+        }
+        display(){
+        document.write("Name is : "+this.name + "<br>");
+        document.write("Color is : "+this.color + "<br>");
+        document.write("Gender is : "+this.gender + "<br>");
+        document.write("---------------------"+ "<br>");
+        
+         }
+        
+        }
+        var a1=new Animal("cow","red","Male");
+        var a2= new Animal("Cat","white","Female");
+        var a3=new Animal("Bird","Mixed","");
+        a1.display();
+        a2.display();
+        a3.display();
+        </script>
+    
+    
+</body>
+</html>

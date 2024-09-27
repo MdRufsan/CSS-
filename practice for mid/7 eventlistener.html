@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventListener</title>
+    <style>
+        button{
+            display:block;
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <button>Click me-1.</button>
+    <button id="btn">Click me-2.</button>
+
+
+
+
+    <script>
+        let b=document.querySelector("button");
+        b.addEventListener("click", myFunction);
+        function myFunction(){
+            alert("I am button 1!!!!");
+        }
+        document.querySelector("#btn").addEventListener("mouseover",function(){
+            alert("I am button 2")
+        });
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions.</title>
+</head>
+<body>
+    
+    <button id="btn"> Submit</button><br>
+    <script>
+        //Traditional function.
+        function display(){document.write("This is traditional function.<br>");}
+            
+        display();
+        
+
+       //Arrow function
+
+        let s=()=> document.write("This is a arrow function. <br>");
+        s();
+        
+           //parameterize in traditional function
+        function display1(n1,n2){ return n1+n2;}
+        document.write(display1(20,30)+ "<br>");
+
+        //parameterize in Arrow function
+           var x1=(n1,n2)=>n1+n2;
+           document.write(x1(20,30)+ "<br>");
+
+           //anymous function. jey function er name thake na.
+           let y=document.getElementById("btn");
+           y.addEventListener("click",function(){
+            
+            alert("Hlw");
+
+           });
+
+       
+
+    </script>
+    
+</body>
+</html>
