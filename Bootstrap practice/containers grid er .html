@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid and container test</title>
+
+    <!-- bootstrap 4 cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <style>
+     
+    </style>
+</head>
+<body>
+   <h1 style="text-align: center;color: red;">Use of container class.</h1>
+    
+   <div class="container"><!--container class auto margin, padding nibe. container-fluid full screen nibe. -->
+        <div >
+            <div>
+                <h4>webdesign1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum adipisci a non rerum fugiat laudantium eaque? Facilis officiis veniam, tenetur dolores minus nulla ex sunt, recusandae mollitia vitae quod perspiciatis.</p>
+            </div>
+            <div>
+                <h4>webdesign2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum adipisci a non rerum fugiat laudantium eaque? Facilis officiis veniam, tenetur dolores minus nulla ex sunt, recusandae mollitia vitae quod perspiciatis.</p>
+            </div>
+            <div >
+                <h4>webdesign3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum adipisci a non rerum fugiat laudantium eaque? Facilis officiis veniam, tenetur dolores minus nulla ex sunt, recusandae mollitia vitae quod perspiciatis.</p>
+            </div>
+            <div>
+                <h4>webdesign4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum adipisci a non rerum fugiat laudantium eaque? Facilis officiis veniam, tenetur dolores minus nulla ex sunt, recusandae mollitia vitae quod perspiciatis.</p>
+            </div>
+        </div>
+   </div><br>
+   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   <h1 style="text-align: center;color: rgb(66, 9, 220);">Use of Grid.</h1>
+    
+   <div class="container"><!--container class auto margin, padding nibe. container-fluid full screen nibe. -->
+
+
+    <div class="row"><!--row is a building class of bootstrap -->
+        <div class="col-4"><!--ey row 4 ta col nibe-->
+            <h4>Webdesign1.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae quia sint quae voluptates, facere quisquam ad aliquid unde provident! Molestiae earum facilis, magnam mollitia iusto nemo pariatur perferendis corporis.</p>
+        </div>
+        <div class="col-3"><!--ey row 3 ta col nibe-->
+            <h4>Webdesign1.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae quia sint quae voluptates, facere quisquam ad aliquid unde provident! Molestiae earum facilis, magnam mollitia iusto nemo pariatur perferendis corporis.</p>
+        </div>
+        <div class="col-1"><!--ey row 1 ta col nibe. ey vabe total 12 ta col ase. -->
+            <h4>Webdesign1.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae quia sint quae voluptates, facere quisquam ad aliquid unde provident! Molestiae earum facilis, magnam mollitia iusto nemo pariatur perferendis corporis.</p>
+        </div>
+
+    </div>
+       
+   </div><br>
+   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   <h1 style="text-align: center;color: rgb(8, 208, 28);">Responsive of Grid.</h1>
+    
+   <div class="container"><!--container class auto margin, padding nibe. container-fluid full screen nibe. -->
+    <div class="row"><!--row is a building class of bootstrap -->
+        <div class="col-lg-3 col-md-6 col-sm-12"><!--screen size large hle 3 col,midium hle 6 col r small hle 12 column nibe. -->
+            <h4>Webdesign1.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae quia sint quae voluptates, facere quisquam ad aliquid unde provident! Molestiae earum facilis, magnam mollitia iusto nemo pariatur perferendis corporis.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12"><!--ey row 3 ta col nibe-->
+            <h4>Webdesign2.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae quia sint quae voluptates, facere quisquam ad aliquid unde provident! Molestiae earum facilis, magnam mollitia iusto nemo pariatur perferendis corporis.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <h4>Webdesign3.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae quia sint quae voluptates, facere quisquam ad aliquid unde provident! Molestiae earum facilis, magnam mollitia iusto nemo pariatur perferendis corporis.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <h4>Webdesign4.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae quia sint quae voluptates, facere quisquam ad aliquid unde provident! Molestiae earum facilis, magnam mollitia iusto nemo pariatur perferendis corporis.</p>
+        </div>
+
+    </div>
+       
+   </div><br>
+
+
+
+    <!-- bootstrap js, jquery, popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
